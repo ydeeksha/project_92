@@ -1,0 +1,79 @@
+<html>
+ <head>
+     <title>math quiz game!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="game.css">
+   <script src="quiz_game_login.js"></script>
+    </head>
+    <body>
+        <center>
+             <div id="login_div1" style="background-color: aliceblue;">
+                <h1>
+                    PLAYER 1 LOGIN
+                </h1>
+                <h2>name : </h2>
+                <input id="player1_input" type="text" placeholder="name1">
+                     </div>
+                     <br>
+                     <div id="login_div2" style="background-color: aliceblue;">
+                        <h1>
+                            PLAYER 2 LOGIN  
+                        </h1>
+                        <h2>name : </h2>
+                        <input id="player2_input" type="text" placeholder="name">
+                             </div>
+                             <button id="login" onclick="addUSER()">login</button>
+                             </center>
+    </body>
+    <style>
+        body
+{
+    background-image:url("i.jpg") ;
+}
+#PLAYER1_name , #PLAYER2_name
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+    </style>
+   <script>
+    
+    function addUSER(){
+        var player1_name=document.getElementById("player1_input").value;
+    
+        var player2_name=document.getElementById("player2_input").value;
+    
+        localStorage.setItem("player1",player1_name);
+        localStorage.setItem("player2",player2_name);
+    
+        localStorage.set
+        window.location="game page.html";
+    }
+
+    
+
+
+
+    
+   </script>
+</html> 
